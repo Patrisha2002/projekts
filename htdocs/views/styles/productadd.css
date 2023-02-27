@@ -1,0 +1,95 @@
+/* header style*/
+button {
+    background-color: #e2e4e2; 
+    border-style: outset;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #111;
+    padding: 8px 24px;
+    font-size: 20px;
+  }
+.header {
+    display: flex;
+    align-items: flex-end;
+    border-style: none none solid none;
+    padding: 10px;
+    margin: 1% 2% 2% 2%;
+}
+.header-text {
+    flex: 6;
+    order: 1;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 36px;
+    color: #111;
+}
+.button-save {
+    flex: 1;
+    order: 2;
+}
+#button-save-product{
+    background-color: #e2e4e2; 
+    border-style: outset;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #111;
+    padding: 8px 24px;
+    font-size: 20px;
+}
+.button-cancel {
+    flex: 1;
+    order: 3;
+}
+
+/* main style*/
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px 15px 40px 15px;
+    min-height: calc(100vh - 325px);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 22px;
+    color: #111;
+    margin: 1% 2% 2% 2%;
+}
+#attribute-form{
+    display: block;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 22px;
+    color: #111;
+}
+#dvd-block{
+    display: block;
+}
+#furniture-block{
+    display: none;
+}
+#book-block{
+    display: none;
+}
+
+/* footer style*/
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-style: solid none none none;
+    padding: 10px;
+    margin: 1% 2% 2% 2%;
+}
+.footer-text {
+    text-align: center;
+    flex: 1;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 24px;
+    color: #111;
+}
+
+#checkboxes{
+    justify-content: flex-end;
+    margin: 1% 2% 2% 55%;
+    position: absolute;
+    top: 100px;
+    right: 160px;
+}

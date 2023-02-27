@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link rel="stylesheet" href="views/styles/questions.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<head>
+    <title>Question list</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-text">Question list</div>
+    <div class="button-return" id="button-go-back">
+        <button>Go back</button>
+    </div>
+    <div class="button-logout">
+        <button id="button-logout-user">Logout</button>
+    </div>
+    <div class="button-delete" id="button-delete-product">
+        <button>Mass delete</button>
+    </div>
+</header>
+
+<button type="button" id="open-chat-button" class="open-button" onclick="sort()">Sort</button>
+<main id="questions"></main>
+
+<footer class="footer">
+
+    <div class="footer-text">patricija.tahtamirova</div>
+</footer>
+
+<!--const-->
+<script src="views/js/Root.js"></script>
+
+<!--import Questions class-->
+<script src="views/js/Question.js"></script>
+
+</body>
+
+<script src="views/js/questions.js"></script>
+</html>
+

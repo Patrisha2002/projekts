@@ -1,0 +1,156 @@
+#questions{
+    min-height: calc(100vh - 250px);
+}
+.header {
+    display: flex;
+    align-items: flex-end;
+    border-style: none none solid none;
+    padding: 10px;
+    margin: 1% 2% 2% 2%;
+}
+.header-text {
+    flex: 6;
+    order: 1;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 36px;
+    color: #111;
+}
+button {
+    background-color: #e2e4e2;
+    border-style: outset;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #111;
+    padding: 8px 24px;
+    font-size: 20px;
+}
+
+.button-questions{
+    flex: 1;
+    order: 6;
+}
+.button-add {
+    flex: 1;
+    order: 3;
+}
+.button-delete {
+    flex: 1;
+    order: 4;
+}
+.button-login {
+    flex: 1;
+    order: 2;
+}
+.button-logout {
+    flex: 1;
+    order: 5;
+    margin-left: 2%;
+}
+
+/* main style */
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    width: 50%;
+    max-width: 30%;
+    padding: 20px 15px 40px 15px;
+    min-height: calc(100vh - 325px);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 22px;
+    color: #111;
+    margin: 1% 2% 2% 2%;
+}
+#car-details{
+    min-height: calc(100vh - 250px);
+}
+
+/* product style */
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    grid-gap: 60px;
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.product-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    border-style: solid;
+    padding: 20px 15px 40px 15px;
+}
+.product-element-label{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #111;
+    font-size: 20px;
+}
+.delete-checkbox{
+    width: 45px;
+    height: 15px;
+    background: #555;
+    position: relative;
+}
+/* footer style */
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-style: solid none none none;
+    padding: 10px;
+    margin: 1% 2% 2% 2%;
+}
+.footer-text {
+    text-align: center;
+    flex: 1;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 24px;
+    color: #111;
+}
+.button-return {
+    flex: 1;
+    order: 4;
+}
+
+#checkboxes{
+    justify-content: flex-end;
+    margin: 1% 2% 2% 55%;
+    position: absolute;
+    top: 100px;
+    right: 160px;
+}
+#car-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px 15px 40px 15px;
+    min-height: calc(100vh - 325px);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 22px;
+    color: #111;
+    margin: 1% 2% 2% 2%;
+}
+
+/* live chat */
+{box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+

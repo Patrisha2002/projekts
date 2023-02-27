@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link rel="stylesheet" href="views/styles/index.css">
+
+
+<head>
+  <title>Update question</title>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-text">Update question</div>
+  <div class="button-return" id="button-go-back">
+    <button>Go back</button>
+  </div>
+</header>
+
+<main id="car-details">
+  <form action="/updateQuestionById" id="question-update-form" method="post">
+    <span id="qIdSpan">Question id: </span>
+    <input type="number" id="qId" name="qId" hidden="hidden">
+    <br>
+    <br>
+    <input type="text" id="msg" name="msg">
+    <br>
+    <br>
+    <button type="submit">Update</button>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="footer-text">patricija.tahtamirova</div>
+</footer>
+
+</body>
+<script src="views/js/Root.js"></script>
+<script src="views/js/updatequestion.js"></script>
+</html>

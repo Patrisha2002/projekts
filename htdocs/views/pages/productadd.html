@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<link rel="stylesheet" href="views/styles/productadd.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<head>
+    <title>Product add</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-text">Product add</div>
+    <div class="button-save">
+        <input type="submit" form="product_form" value="Save" id="button-save-product">
+    </div>
+    <div class="button-cancel">
+        <button id="button-cancel-product">Cancel</button>
+    </div>
+</header>
+
+<main id="main-container">
+
+    <form method="POST" action="addProduct" id="product_form">
+        <div>
+            <label for="sku">SKU:</label>
+            <input type="text" id="sku" name="sku">
+        </div>
+        <br>
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <br>
+
+        <div>
+            <label for="price">Price ($):</label>
+            <input type="number" id="price" name="price">
+        </div>
+        <br>
+
+        <div>
+            <label for="prodYear">Production year:</label>
+            <input type="number" id="prodYear" name="prodYear">
+        </div>
+        <br>
+
+        <div>
+            <label for="engineVolume">Engine volume:</label>
+            <input type="number" id="engineVolume" name="engineVolume">
+        </div>
+        <br>
+
+        <div>
+            <label for="horsePower">Horse power:</label>
+            <input type="number" id="horsePower" name="horsePower">
+        </div>
+        <br>
+
+        <div>
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color">
+        </div>
+        <br>
+
+        <div>
+            <label for="engineType">Engine type:</label>
+            <select name="engineType" id="engineType">
+                <option value="Diesel">Diesel</option>
+                <option value="Gas">Gas</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Electrical">Electrical</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="transmission">Transmission:</label>
+            <select name="transmission" id="transmission">
+                <option value="Manual">Manual</option>
+                <option value="Automatic">Automatic</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="body">Body:</label>
+            <select name="body" id="body">
+                <option value="Sedan">Sedan</option>
+                <option value="Coupe">Coupe</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Jeep">Jeep</option>
+            </select>
+        </div>
+        <br>
+
+        <fieldset id="checkboxes">
+            <legend>Choose your car's features:</legend>
+            <div>
+                <input type="checkbox" id="heatedSeats" name="heatedSeats" value="checked">
+                <input type="hidden" id="heatedSeatsHidden" name="heatedSeats" value="unchecked">
+                <label for="heatedSeats">Heated seats</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="heatedSteeringWheel" name="heatedSteeringWheel" value="checked">
+                <input type="hidden" id="heatedSteeringWheelHidden" name="heatedSteeringWheel" value="unchecked">
+                <label for="heatedSteeringWheel">Heated steering wheel</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="navigationSystem" name="navigationSystem" value="checked">
+                <input type="hidden" id="navigationSystemHidden" name="navigationSystem" value="unchecked">
+                <label for="navigationSystem">Navigation system</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="powerLiftage" name="powerLiftage" value="checked">
+                <input type="hidden" id="powerLiftageHidden" name="powerLiftage" value="unchecked">
+                <label for="powerLiftage">Power liftage</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="leatherInterior" name="leatherInterior" value="checked">
+                <input type="hidden" id="leatherInteriorHidden" name="leatherInterior" value="unchecked">
+                <label for="leatherInterior">Leather interior</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="bluetooth" name="bluetooth" value="checked">
+                <input type="hidden" id="bluetoothHidden" name="bluetooth" value="unchecked">
+                <label for="bluetooth">Bluetooth</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="cruiseControl" name="cruiseControl" value="checked">
+                <input type="hidden" id="cruiseControlHidden" name="cruiseControl" value="unchecked">
+                <label for="cruiseControl">Cruise control</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="toning" name="toning" value="checked">
+                <input type="hidden" id="toningHidden" name="toning" value="unchecked">
+                <label for="toning">Toning</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="stabilityControl" name="stabilityControl" value="checked">
+                <input type="hidden" id="stabilityControlHidden" name="stabilityControl" value="unchecked">
+                <label for="stabilityControl">Stability control</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="handsFree" name="handsFree" value="checked">
+                <input type="hidden" id="handsFreeHidden" name="handsFree" value="unchecked">
+                <label for="handsFree">Hands free</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="brakeAssist" name="brakeAssist" value="checked">
+                <input type="hidden" id="brakeAssistHidden" name="brakeAssist" value="unchecked">
+                <label for="brakeAssist">Brake assist</label>
+            </div>
+        </fieldset>
+        
+    </form>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-text">patricija.tahtamirova</div>
+</footer>
+
+</body>
+<!--<script src="views/js/productadd.js"></script>-->
+<script src="views/js/caradd.js"></script>
+</html>

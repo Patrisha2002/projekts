@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<link rel="stylesheet" href="views/styles/index.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<head>
+    <title>Product list</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-text">Product list</div>
+    <div class="search-string">
+        <input type="text" id="searchInput">
+        <button id="searchButton">Search</button>
+    </div>
+    <div class="button-gallery">
+        <button id="button-goto-gallery">Gallery</button>
+    </div>
+    <div class="button-login">
+        <button id="button-login-user">Login</button>
+    </div>
+    <div class="button-questions">
+        <button id="button-show-questions">Questions</button>
+    </div>
+    <div class="button-logout">
+        <button id="button-logout-user">Logout</button>
+    </div>
+    <div class="button-add">
+        <button id="button-add-product">Add</button>
+    </div>
+    <div class="button-delete" id="button-delete-product">
+        <button>Mass delete</button>
+    </div>
+</header>
+
+<main id="products"></main>
+
+<button type="button" id="open-chat-button" class="open-button" onclick="openForm()">Open</button>
+<div class="chat-popup" id="myForm">
+    <form action="/submitQuestion" class="form-container" method="POST">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." id="msg" name="msg" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+<div class="poll-popup" id="myPoll">
+    <div class="form-container">
+        <h1>Do you like this website?</h1>
+
+        <button class="btn" onclick="closePoll()">Like</button>
+        <button class="btn cancel" onclick="closePoll()">Don't like</button>
+    </div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-text">patricija.tahtamirova</div>
+</footer>
+
+<!--const-->
+<script src="views/js/Root.js"></script>
+
+<!--import Products class-->
+<script src="views/js/Products.js"></script>
+
+</body>
+
+<script src="views/js/index.js"></script>
+</html>
+
